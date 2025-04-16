@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.phone-ad-container {
+  display: flex;
+  justify-content: center; /* Center the ad section horizontally */
+  align-items: center; /* Center the ad section vertically (if needed for full page) */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  background-color: #f0f0f0; /* Optional background color */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.ad-section {
+  background-color: #000; /* Black background as in the image */
+  color: #fff; /* White text color */
+  padding: 40px; /* Adjust padding as needed */
+  border-radius: 20px; /* Optional rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack text and image vertically on smaller screens */
+  align-items: center; /* Center content within the section */
+  max-width: 600px; /* Adjust maximum width as needed */
+  width: 90%; /* Take up a percentage of the container width */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-content {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px; /* Space between text and image */
+  width: 100%; /* Take full width within the section */
+}
+
+.kecerdesan-visual {
+  font-size: 16px; /* Adjust font size */
+  color: #999; /* Light gray color */
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 2.5em; /* Adjust font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.body-text {
+  font-size: 1em; /* Adjust font size */
+  line-height: 1.6;
+}
+
+.image-container {
+  width: 80%; /* Adjust image container width */
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+.phone-image {
+  width: 100%; /* Make the image responsive within its container */
+  max-width: 300px; /* Adjust maximum image width */
+  border-radius: 10px; /* Optional image border radius */
+}
+
+/* Media query for larger screens to potentially arrange text and image side-by-side */
+@media (min-width: 768px) {
+  .ad-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-content {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: left;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .image-container {
+    width: 40%;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

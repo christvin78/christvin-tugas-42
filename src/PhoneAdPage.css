@@ -1,0 +1,68 @@
+.ad-container {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px; /* Tambahan padding luar */
+    box-sizing: border-box;
+  }
+  
+  .ad-content {
+    max-width: 720px;
+    width: 100%;
+    padding: 16px; /* Tambahan padding dalam */
+  }
+  
+  .ad-text {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    color: #aaa;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .bold {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .ad-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Responsive tweak */
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .ad-content {
+      padding: 32px;
+    }
+  }
+  
